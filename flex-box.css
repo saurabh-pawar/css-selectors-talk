@@ -1,0 +1,181 @@
+
+/***************************Flex Grow***************************/
+.my-flex-grow-1 {
+    flex-grow: 1;
+}
+
+.my-flex-grow-2 {
+    flex-grow: 2;
+}
+
+input[id="flex-grow-1"]:checked ~ .demo-container #flex-grow-one {
+    flex-grow: 1
+}
+
+input[id="flex-grow-2"]:checked ~ .demo-container #flex-grow-one {
+    flex-grow: 2
+}
+
+input[id="flex-grow-2"]:checked ~ .demo-container #flex-grow-one::before {
+    content: 'Flex grow 2'
+}
+
+input[id="flex-grow-3"]:checked ~ .demo-container #flex-grow-one {
+    flex-grow: 8
+}
+
+input[id="flex-grow-3"]:checked ~ .demo-container #flex-grow-one::before {
+    content: 'Flex grow 8'
+}
+
+#flex-grow-one::before {
+    content: 'Flex grow 1'
+}
+
+#flex-grow-two::before {
+    content: 'Flex grow 2'
+}
+
+/***************************************************************/
+
+/***************************Flex Shrink***************************/
+
+.my-flex-shrink-1 {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.my-flex-shrink-2 {
+    flex-shrink: 2;
+    flex-grow: 1;
+}
+
+input[id="flex-shrink-1"]:checked ~ .demo-container #flex-shrink-one {
+    flex-shrink: 1
+}
+
+input[id="flex-shrink-2"]:checked ~ .demo-container #flex-shrink-one {
+    flex-shrink: 2
+}
+
+input[id="flex-shrink-2"]:checked ~ .demo-container #flex-shrink-one::before {
+    content: 'Flex shrink 2'
+}
+
+input[id="flex-shrink-3"]:checked ~ .demo-container #flex-shrink-one {
+    flex-shrink: 8
+}
+
+input[id="flex-shrink-3"]:checked ~ .demo-container #flex-shrink-one::before {
+    content: 'Flex shrink 8'
+}
+
+#flex-shrink-one::before {
+    content: 'Flex shrink 1'
+}
+
+#flex-shrink-two::before {
+    content: 'Flex shrink 2'
+}
+/***************************************************************/
+
+
+/***************************Flex basis***************************/
+
+.my-flex-basis-1 {
+    flex-basis: 10;
+}
+
+input[id="flex-basis-1"]:checked ~ .demo-container #flex-basis-one {
+    flex-basis: 50%
+}
+
+    input[id="flex-basis-1"]:checked ~ .demo-container #flex-basis-one::before {
+        content: 'Flex basis 50%'
+    }
+
+input[id="flex-basis-2"]:checked ~ .demo-container #flex-basis-one {
+    flex-basis: 100%
+}
+
+    input[id="flex-basis-2"]:checked ~ .demo-container #flex-basis-one::before {
+        content: 'Flex basis 100%'
+    }
+
+#flex-basis-one::before {
+    content: 'Flex basis 0%'
+}
+
+/***************************************************************/
+
+/***************************Flex direction***************************/
+
+input[id="flex-direction-1"]:checked ~ .flex-direction{
+    flex-direction: row;
+}
+input[id="flex-direction-2"]:checked ~ .flex-direction {
+    flex-direction: column;
+}
+input[id="flex-direction-3"]:checked ~ .flex-direction {
+    flex-direction: row-reverse;
+}
+input[id="flex-direction-4"]:checked ~ .flex-direction {
+    flex-direction: column-reverse;
+}
+/***************************************************************/
+
+/***************************Flex wrap***************************/
+
+input[id="flex-wrap-1"]:checked ~ .my-flex-wrap {
+    flex-wrap: wrap;
+}
+
+input[id="flex-wrap-2"]:checked ~ .my-flex-wrap {
+    flex-wrap: nowrap;
+}
+
+input[id="flex-wrap-3"]:checked ~ .my-flex-wrap {
+    flex-wrap: wrap-reverse;
+}
+
+/***************************************************************/
+
+/***************************Justify content***************************/
+
+input[id="justify-content-1"]:checked ~ .justify-content {
+    justify-content: flex-start;
+}
+
+input[id="justify-content-2"]:checked ~ .justify-content {
+    justify-content: center;
+}
+
+input[id="justify-content-3"]:checked ~ .justify-content {
+    justify-content: flex-end;
+}
+
+input[id="justify-content-4"]:checked ~ .justify-content {
+    justify-content: space-between;
+}
+
+
+/***************************************************************/
+
+/***************************Align items***************************/
+
+input[id="align-items-1"]:checked ~ .align-items {
+    align-items: flex-start;
+}
+
+input[id="align-items-2"]:checked ~ .align-items {
+    align-items: center;
+}
+
+input[id="align-items-3"]:checked ~ .align-items {
+    align-items: flex-end;
+}
+
+input[id="align-items-4"]:checked ~ .align-items {
+    align-items: baseline;
+}
+/***************************************************************/

@@ -1,0 +1,27 @@
+
+attribute [=]
+
+All talks which are hands on demos format
+
+li div  --- all children -- make all divs center aligned.
+
+li > div -- direct children -- make Session divs have background.
+
++ -- next sibling  -- top border to all list items but not to the last list item
+
+~ any sibling -- mark all hands on talks in italic
+
+:hover - make lis item change background
+
+:first-child & last child margin top and bottom
+
+:checked - make list item highlighted when input checked.
+
+nth-child(2n+1)
+
+
+
+examples are purely for demo purposes. The intention is to show you the possibilites, not advice you on its correct usage.
+with great power comes great responsibility
+code quality can go bad very quickly
+Please try them urself

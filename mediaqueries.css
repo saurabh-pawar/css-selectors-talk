@@ -1,0 +1,55 @@
+
+:root {
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
+
+
+.mediaquery-fontsize {
+    font-size: 10px;
+}
+
+.mediaquery-fontsize::after {
+    content: 'font-size 10px'
+}
+
+.mediaquery-display {
+    display: none;
+}
+
+.mediaquery-menu {
+    min-width: 97%;
+}
+
+.mediaquery-code{
+    display : none;
+}
+
+@media all and (min-width: 576px) {
+    .mediaquery-fontsize {
+        font-size: 20px;
+    }
+
+    .mediaquery-code {
+        display: flex;
+    }
+
+    .mediaquery-fontsize::after {
+        content: 'font-size 20px'
+    }
+
+    .mediaquery-display {
+        display: block;
+    }
+
+    .mediaquery-display:after {
+        content: 'You can see me only when the width is more than 576px';
+    }
+
+    .mediaquery-menu {
+        min-width: 20%;
+    }
+}

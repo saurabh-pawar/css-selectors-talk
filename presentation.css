@@ -1,0 +1,422 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    line-height: 1.3;
+    background: var(--theme-background);
+}
+
+/**************************Navigation**************************/
+.nav-button {
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    top: 50%;
+    color: var(--theme-fontcolor);
+    font-size: 4vw;
+    font-family: "FontAwesome";
+    z-index: 10;
+}
+
+input[id="nav-button-1"]:checked ~ label[for="nav-button-2"] {
+    color: var(--theme-inverted-fontcolor);
+}
+
+.start-button {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    color: var(--theme-inverted-fontcolor);
+    font-size: 4vw;
+    font-family: "FontAwesome";
+    visibility: visible;
+    right: 2vw;
+    z-index: 10;
+}
+
+
+.start-button:before{
+    content: '\f144';
+}
+input[id="start-button"]:checked ~ label[for="start-button"]{
+    display: none;
+}
+
+/*Enable Next Buttons*/
+
+input[id="start-button"]:checked ~ label[for="nav-button-2"],
+input[id="nav-button-2"]:checked ~ label[for="nav-button-3"],
+input[id="nav-button-3"]:checked ~ label[for="nav-button-4"],
+input[id="nav-button-4"]:checked ~ label[for="nav-button-5"],
+input[id="nav-button-5"]:checked ~ label[for="nav-button-6"],
+input[id="nav-button-6"]:checked ~ label[for="nav-button-7"],
+input[id="nav-button-7"]:checked ~ label[for="nav-button-8"],
+input[id="nav-button-8"]:checked ~ label[for="nav-button-9"],
+input[id="nav-button-9"]:checked ~ label[for="nav-button-10"],
+input[id="nav-button-10"]:checked ~ label[for="nav-button-11"],
+input[id="nav-button-11"]:checked ~ label[for="nav-button-12"] {
+    visibility: visible;
+    right: 2vw;
+}
+
+input[id="nav-button-1"]:checked ~ label[for="nav-button-2"]:before,
+input[id="nav-button-2"]:checked ~ label[for="nav-button-3"]:before,
+input[id="nav-button-3"]:checked ~ label[for="nav-button-4"]:before,
+input[id="nav-button-4"]:checked ~ label[for="nav-button-5"]:before,
+input[id="nav-button-5"]:checked ~ label[for="nav-button-6"]:before,
+input[id="nav-button-6"]:checked ~ label[for="nav-button-7"]:before,
+input[id="nav-button-7"]:checked ~ label[for="nav-button-8"]:before,
+input[id="nav-button-8"]:checked ~ label[for="nav-button-9"]:before,
+input[id="nav-button-9"]:checked ~ label[for="nav-button-10"]:before,
+input[id="nav-button-10"]:checked ~ label[for="nav-button-11"]:before,
+input[id="nav-button-11"]:checked ~ label[for="nav-button-12"]:before {
+    content: '\f0a9';
+}
+
+/*Enable Prev Buttons*/
+input[id="nav-button-2"]:checked ~ label[for="nav-button-1"],
+input[id="nav-button-3"]:checked ~ label[for="nav-button-2"],
+input[id="nav-button-4"]:checked ~ label[for="nav-button-3"],
+input[id="nav-button-5"]:checked ~ label[for="nav-button-4"],
+input[id="nav-button-6"]:checked ~ label[for="nav-button-5"],
+input[id="nav-button-7"]:checked ~ label[for="nav-button-6"],
+input[id="nav-button-8"]:checked ~ label[for="nav-button-7"],
+input[id="nav-button-9"]:checked ~ label[for="nav-button-8"],
+input[id="nav-button-10"]:checked ~ label[for="nav-button-9"],
+input[id="nav-button-11"]:checked ~ label[for="nav-button-10"],
+input[id="nav-button-12"]:checked ~ label[for="nav-button-11"] {
+    visibility: visible;
+    left: 2vw;
+}
+
+input[id="nav-button-2"]:checked ~ label[for="nav-button-1"]:before,
+input[id="nav-button-3"]:checked ~ label[for="nav-button-2"]:before,
+input[id="nav-button-4"]:checked ~ label[for="nav-button-3"]:before,
+input[id="nav-button-5"]:checked ~ label[for="nav-button-4"]:before,
+input[id="nav-button-6"]:checked ~ label[for="nav-button-5"]:before,
+input[id="nav-button-7"]:checked ~ label[for="nav-button-6"]:before,
+input[id="nav-button-8"]:checked ~ label[for="nav-button-7"]:before,
+input[id="nav-button-9"]:checked ~ label[for="nav-button-8"]:before,
+input[id="nav-button-10"]:checked ~ label[for="nav-button-9"]:before,
+input[id="nav-button-11"]:checked ~ label[for="nav-button-10"]:before,
+input[id="nav-button-12"]:checked ~ label[for="nav-button-11"]:before {
+    content: '\f0a8';
+}
+
+/*Enable Slides with effects */
+input[id="nav-button-1"]:checked ~ *[slide-sequence-number="1"][entry-animation="fade_in"],
+input[id="nav-button-2"]:checked ~ *[slide-sequence-number="2"][entry-animation="fade_in"],
+input[id="nav-button-3"]:checked ~ *[slide-sequence-number="3"][entry-animation="fade_in"],
+input[id="nav-button-4"]:checked ~ *[slide-sequence-number="4"][entry-animation="fade_in"],
+input[id="nav-button-5"]:checked ~ *[slide-sequence-number="5"][entry-animation="fade_in"],
+input[id="nav-button-6"]:checked ~ *[slide-sequence-number="6"][entry-animation="fade_in"],
+input[id="nav-button-7"]:checked ~ *[slide-sequence-number="7"][entry-animation="fade_in"],
+input[id="nav-button-8"]:checked ~ *[slide-sequence-number="8"][entry-animation="fade_in"],
+input[id="nav-button-9"]:checked ~ *[slide-sequence-number="9"][entry-animation="fade_in"],
+input[id="nav-button-10"]:checked ~ *[slide-sequence-number="10"][entry-animation="fade_in"],
+input[id="nav-button-11"]:checked ~ *[slide-sequence-number="11"][entry-animation="fade_in"],
+input[id="nav-button-12"]:checked ~ *[slide-sequence-number="12"][entry-animation="fade_in"] {
+    display: flex;
+    animation-name: fade_in;
+    animation-duration: 1s;
+}
+
+input[id="nav-button-1"]:checked ~ *[slide-sequence-number="1"][entry-animation="grow"],
+input[id="nav-button-2"]:checked ~ *[slide-sequence-number="2"][entry-animation="grow"],
+input[id="nav-button-3"]:checked ~ *[slide-sequence-number="3"][entry-animation="grow"],
+input[id="nav-button-4"]:checked ~ *[slide-sequence-number="4"][entry-animation="grow"],
+input[id="nav-button-5"]:checked ~ *[slide-sequence-number="5"][entry-animation="grow"],
+input[id="nav-button-6"]:checked ~ *[slide-sequence-number="6"][entry-animation="grow"],
+input[id="nav-button-7"]:checked ~ *[slide-sequence-number="7"][entry-animation="grow"],
+input[id="nav-button-8"]:checked ~ *[slide-sequence-number="8"][entry-animation="grow"],
+input[id="nav-button-9"]:checked ~ *[slide-sequence-number="9"][entry-animation="grow"],
+input[id="nav-button-10"]:checked ~ *[slide-sequence-number="10"][entry-animation="grow"],
+input[id="nav-button-11"]:checked ~ *[slide-sequence-number="11"][entry-animation="grow"],
+input[id="nav-button-12"]:checked ~ *[slide-sequence-number="12"][entry-animation="grow"] {
+    display: flex;
+    animation-name: grow;
+    animation-duration: 1s;
+}
+
+
+input[id="nav-button-1"]:checked ~ *[slide-sequence-number="1"][entry-animation="slide_bottom"],
+input[id="nav-button-2"]:checked ~ *[slide-sequence-number="2"][entry-animation="slide_bottom"],
+input[id="nav-button-3"]:checked ~ *[slide-sequence-number="3"][entry-animation="slide_bottom"],
+input[id="nav-button-4"]:checked ~ *[slide-sequence-number="4"][entry-animation="slide_bottom"],
+input[id="nav-button-5"]:checked ~ *[slide-sequence-number="5"][entry-animation="slide_bottom"],
+input[id="nav-button-6"]:checked ~ *[slide-sequence-number="6"][entry-animation="slide_bottom"],
+input[id="nav-button-7"]:checked ~ *[slide-sequence-number="7"][entry-animation="slide_bottom"],
+input[id="nav-button-8"]:checked ~ *[slide-sequence-number="8"][entry-animation="slide_bottom"],
+input[id="nav-button-9"]:checked ~ *[slide-sequence-number="9"][entry-animation="slide_bottom"],
+input[id="nav-button-10"]:checked ~ *[slide-sequence-number="10"][entry-animation="slide_bottom"],
+input[id="nav-button-11"]:checked ~ *[slide-sequence-number="11"][entry-animation="slide_bottom"],
+input[id="nav-button-12"]:checked ~ *[slide-sequence-number="12"][entry-animation="slide_bottom"] {
+    display: flex;
+    animation-name: slide_bottom;
+    animation-duration: 1s;
+}
+
+input[id="nav-button-1"]:checked ~ *[slide-sequence-number="1"][entry-animation="slide_left"],
+input[id="nav-button-2"]:checked ~ *[slide-sequence-number="2"][entry-animation="slide_left"],
+input[id="nav-button-3"]:checked ~ *[slide-sequence-number="3"][entry-animation="slide_left"],
+input[id="nav-button-4"]:checked ~ *[slide-sequence-number="4"][entry-animation="slide_left"],
+input[id="nav-button-5"]:checked ~ *[slide-sequence-number="5"][entry-animation="slide_left"],
+input[id="nav-button-6"]:checked ~ *[slide-sequence-number="6"][entry-animation="slide_left"],
+input[id="nav-button-7"]:checked ~ *[slide-sequence-number="7"][entry-animation="slide_left"],
+input[id="nav-button-8"]:checked ~ *[slide-sequence-number="8"][entry-animation="slide_left"],
+input[id="nav-button-9"]:checked ~ *[slide-sequence-number="9"][entry-animation="slide_left"],
+input[id="nav-button-10"]:checked ~ *[slide-sequence-number="10"][entry-animation="slide_left"],
+input[id="nav-button-11"]:checked ~ *[slide-sequence-number="11"][entry-animation="slide_left"],
+input[id="nav-button-12"]:checked ~ *[slide-sequence-number="12"][entry-animation="slide_left"] {
+    display: flex;
+    animation-name: slide_left;
+    animation-duration: 1s;
+}
+
+/*****************************************************************/
+.no-area {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    color: var(--theme-fontcolor);
+    background-color: var(--theme-background);
+    padding: 2vh 6vw 6vh 6vw;
+}
+
+inverted-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    color: var(--theme-inverted-fontcolor);
+    background-color: var(--theme-inverted-background);
+    padding: 2vh 6vw 6vh 6vw;
+}
+
+.slide-header{
+    font-weight: bolder;
+    font-size: 8vw;
+}
+
+.slide-subheader {
+    font-weight: normal;
+    font-size: larger;
+}
+
+/*********************Animations**********************/
+
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide_left {
+    from {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide_bottom {
+    from {
+        opacity: 0;
+        transform: translateY(200vh);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fall_top {
+    0% {
+        opacity: 0;
+        transform: translateY(-50vh);
+    }
+
+    5% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(-10vh);
+    }
+
+    15% {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(-5vh);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-2vh);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(-0.5vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes flip {
+    0% {
+        opacity: 0;
+        transform: rotateY(180deg) translateX(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateX(0);
+    }
+}
+
+@keyframes grow {
+    0% {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+/*****************************************************/
+
+
+/***********************Timer*****************************/
+
+.timer {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+}
+
+.wrapper {
+    width: var(--timer-size);
+    height: var(--timer-size);
+    z-index: 1000;
+    position: relative;
+    background: var(--theme-background);
+}
+
+.wrapper .pie {
+    width: 50%;
+    height: 100%;
+    transform-origin: 100% 50%;
+    position: absolute;
+    background: var(--theme-fontcolor);
+    border: 5px solid rgba(0,0,0,0.5);
+}
+
+.wrapper .spinner {
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    z-index: 200;
+    border-right: none;
+    animation: rota var(--talk-duration) linear 1;
+}
+
+.wrapper .filler {
+    border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+    left: 50%;
+    opacity: 0;
+    z-index: 100;
+    animation: opa var(--talk-duration) steps(1, end) 1 reverse;
+    border-left: none;
+}
+
+.wrapper .mask {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    opacity: 1;
+    z-index: 300;
+    animation: opa var(--talk-duration) steps(1, end) 1;
+}
+
+input[id="start-button"]:not(:checked) ~ .timer .wrapper .mask,
+input[id="start-button"]:not(:checked) ~ .timer .wrapper .filler,
+input[id="start-button"]:not(:checked) ~ .timer .wrapper .spinner {
+    animation-play-state: paused;
+}
+
+input[id="nav-button-1"]:checked ~ .timer .wrapper {
+    background: var(--theme-inverted-background);
+}
+
+input[id="nav-button-1"]:checked ~ .timer .wrapper .pie {
+    background: var(--theme-inverted-fontcolor);
+}
+
+@keyframes rota {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes opa {
+    0% {
+        opacity: 1;
+    }
+
+    50%, 100% {
+        opacity: 0;
+    }
+}
+
+/************************************************************************/
+

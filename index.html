@@ -1,0 +1,768 @@
+<html>
+
+<head>
+    <link rel="stylesheet" media="all" href="fontawesome.css">
+    <link rel="stylesheet" media="all" href="bootstrap.css">
+    <link rel="stylesheet" media="all" href="root.css">
+    <link rel="stylesheet" media="all" href="presentation.css">
+    <link rel="stylesheet" media="all" href="common.css">
+    <link rel="stylesheet" media="all" href="cssselectors.css">
+    <link rel="stylesheet" media="all" href="demo.css">
+    <link rel="stylesheet" media="all" href="moon.css">
+</head>
+
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <input type="radio" id="start-button" class="no-area" />
+    <label for="start-button" class="start-button"></label>
+
+
+    <input type="radio" id="nav-button-1" name="navigation" class="no-area" checked/>
+    <input type="radio" id="nav-button-2" name="navigation" class="no-area" />
+    <input type="radio" id="nav-button-3" name="navigation" class="no-area" />
+    <input type="radio" id="nav-button-4" name="navigation" class="no-area" />
+    <input type="radio" id="nav-button-5" name="navigation" class="no-area" />
+    <input type="radio" id="nav-button-6" name="navigation" class="no-area" />
+    <input type="radio" id="nav-button-7" name="navigation" class="no-area" />
+    <input type="radio" id="nav-button-8" name="navigation" class="no-area" />
+    <input type="radio" id="nav-button-9" name="navigation" class="no-area" />
+    <input type="radio" id="nav-button-10" name="navigation" class="no-area" />
+    <input type="radio" id="nav-button-11" name="navigation" class="no-area" />
+    <!--<input type="radio" id="nav-button-12" name="navigation" class="no-area" />-->
+
+    <label for="nav-button-1" class="nav-button"></label>
+    <label for="nav-button-2" class="nav-button"></label>
+    <label for="nav-button-3" class="nav-button"></label>
+    <label for="nav-button-4" class="nav-button"></label>
+    <label for="nav-button-5" class="nav-button"></label>
+    <label for="nav-button-6" class="nav-button"></label>
+    <label for="nav-button-7" class="nav-button"></label>
+    <label for="nav-button-8" class="nav-button"></label>
+    <label for="nav-button-9" class="nav-button"></label>
+    <label for="nav-button-10" class="nav-button"></label>
+    <label for="nav-button-11" class="nav-button"></label>
+    <!--<label for="nav-button-12" class="nav-button"></label>-->
+
+    <div class="timer">
+        <div class="wrapper">
+            <div class="pie spinner"></div>
+            <div class="pie filler"></div>
+            <div class="mask"></div>
+        </div>
+    </div>
+
+
+
+    <inverted-slide slide-sequence-number="1" entry-animation="fade_in">
+        <div class="container-fluid">
+            <div class="row no-gutters h-100 justify-content-center">
+                <div class="col-2 moon-container">
+                    <div class="moon"></div>
+                </div>
+                <div class="col-4">
+                    <div class="h-100 d-flex justify-content-center align-items-center">
+                        <div class="w-100">
+                            <div class="row no-gutters">
+                                <div><span class="slide-header">C</span>onstantly</div>
+                                <div><span class="slide-header">S</span>unny</div>
+                                <div><span class="slide-header">S</span>ide</div>
+                            </div>
+                            <div class="row no-gutters">
+                                <div class="slide-header text-center">Tricks</div>
+                            </div>
+                            <div class="d-flex col-8 justify-content-end slide-subheader">-Saurabh Pawar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </inverted-slide>
+    <slide slide-sequence-number="2" entry-animation="fade_in">
+        <div class="container-fluid">
+            <div class="d-flex h-100 justify-content-center align-items-center">
+                <div class="col-8 m-auto">
+                    <img class="col" src="images/backenddev.jpg" />
+                </div>
+            </div>
+        </div>
+    </slide>
+    <slide slide-sequence-number="3" entry-animation="fade_in">
+        <div class="container-fluid">
+            <div class="d-flex h-100 justify-content-center align-items-center" ">
+                <div class="col-8 m-auto">
+                    <img class="col" src="images/blinds.gif" />
+                </div>
+            </div>
+        </div>
+    </slide>
+    <slide slide-sequence-number="4" entry-animation="slide_left">
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center">
+                <h1>Common CSS Selectors</h1>
+            </div>
+            <div class="row no-gutters pt-1 h-100 justify-content-center">
+
+                <input type="checkbox" id="common-selector-1" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="common-selector-2" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="common-selector-3" name="css-selectors" class="no-area" />
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="common-selector-1">h1</label>
+                    <span class="css-selector-describe-text">match by tag name</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="common-selector-2">.session</label>
+                    <span class="css-selector-describe-text">Match by class name</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="common-selector-3">#morning-session</label>
+                    <span class="css-selector-describe-text">Match by id</span>
+                </div>
+
+                <div class="demo-container d-flex">
+                    <h1 class="col-12 my-3">&lt;h1&gt;Back 2 Base Schedule&lt;/h1&gt;</h1>
+                    <div id="morning-session" class="col-6 my-3">
+                        <div>&lt;div id="morning-session" &gt;</div>
+                        <div class="session-name">&emsp;&lt;div class="session-name"&gt;Morning Session&lt;/div&gt;</div>
+                        <ul id="morning-session" class="session">
+                            <li>&emsp;&lt;ul&gt;</li>
+                            <li>&emsp;&emsp;&lt;li&gt;</li>
+                            <li id="talk1" class="row" format="key-note talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1 text-break">Key Note: Innovation and the elephant int the room</div>
+                                <div class="talk-format col-2 px-1">Key Note</div>
+                                <div class="talk-presenter col-2 px-1">Nelly Sattari</div>
+                                <div class="talk-time col-2 px-1">9:20am</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&emsp;&lt;li&gt;</li>
+                            <li id="talk2" class="row" format="talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1">I have done that before... Let me have a look</div>
+                                <div class="talk-format col-2 px-1">Talk</div>
+                                <div class="talk-presenter col-2 px-1">Dom Raniszewski</div>
+                                <div class="talk-time col-2 px-1">11:55am</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&emsp;&lt;li id="break1" &gt;</li>
+                            <li class="row" id="break1">
+                                <div class="offset-md-1 col-11" session-busy="false">Lunch Break</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&lt;/ul&gt;</li>
+                        </ul>
+                        <div>&lt;/div&gt;</div>
+                    </div>
+                    <div id="afternoon-session" class="col-6 my-3">
+                        <div>&lt;div id="afternoon-session" &gt;</div>
+                        <div class="session-name">&emsp;&lt;div class="session-name"&gt;Afternoon Session &lt;div&gt;</div>
+                        <ul id="afternoon-session" class="session" session-busy="true">
+                            <li>&emsp;&lt;ul&gt;</li>
+                            <li>&emsp;&emsp;&lt;li&gt;</li>
+                            <li id="talk1" class="row" format="Workshop">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1">Headwall smashing your way through React Hooks & Redux</div>
+                                <div class="talk-format col-2 px-1">Workshop</div>
+                                <div class="talk-presenter col-2 px-1">Nelly Sattari</div>
+                                <div class="talk-time col-2 px-1">1:00pm</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&emsp;&lt;li&gt;</li>
+                            <li id="talk2" class="row" format="quick-talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1">Fail Fest</div>
+                                <div class="talk-format col-2 px-1">Expeience Sharing</div>
+                                <div class="talk-presenter col-2 px-1"></div>
+                                <div class="talk-time col-2 px-1">2:15pm</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&emsp;&lt;li id="break2" &gt;</li>
+                            <li class="row" id="break2">
+                                <div class="offset-md-1 col-11" session-busy="false">Refreshments at 1 Castlereagh</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&lt;/ul&gt;</li>
+                        </ul>
+                        <div>&lt;/div&gt;</div>
+                    </div>
+                </div>
+    
+
+            </div>
+        </div>
+    </slide>
+    <slide slide-sequence-number="5" entry-animation="grow">
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center">
+                <h1>Attribute Selectors</h1>
+            </div>
+            <div class="row no-gutters pt-1 h-100 justify-content-center">
+
+                <input type="checkbox" id="attr-selector-1" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="attr-selector-2" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="attr-selector-3" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="attr-selector-4" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="attr-selector-5" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="attr-selector-6" name="css-selectors" class="no-area" />
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="attr-selector-1">[class="session-name"]</label>
+                    <span class="css-selector-describe-text">exact match</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="attr-selector-2">[id$="session"]</label>
+                    <span class="css-selector-describe-text">ends with</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="attr-selector-3">[id*="break"]</label>
+                    <span class="css-selector-describe-text">contains</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="attr-selector-4">[id^="break"]</label>
+                    <span class="css-selector-describe-text">begins with</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="attr-selector-5">[format~="talk"]</label>
+                    <span class="css-selector-describe-text">Whitespace separated list</span>
+                </div>
+
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="attr-selector-6">[class|="session"]</label>
+                    <span class="css-selector-describe-text">exactly or start with followed by -</span>
+                </div>
+
+                <div class="demo-container d-flex">
+                    <h1 class="col-12 my-3">
+                        &lt;h1&gt;Back 2 Base Schedule&lt;/h1&gt;
+                    </h1>
+                    <div id="morning-session" class="col-6 my-3">
+                        <div>&lt;div id="morning-session" &gt;</div>
+                        <div class="session-name">&emsp;&lt;div class="session-name"&gt;Morning Session&lt;/div&gt;</div>
+                        <ul class="session">
+                            <li>&emsp;&lt;ul&gt;</li>
+                            <li>&emsp;&emsp;&lt;li format="key-note talk"&gt;</li>
+                            <li id="talk1" class="row" format="key-note talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1 text-break">Key Note: Innovation and the elephant int the room</div>
+                                <div class="talk-format col-2 px-1">Key Note</div>
+                                <div class="talk-presenter col-2 px-1">Nelly Sattari</div>
+                                <div class="talk-time col-2 px-1">10:00am</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&emsp;&lt;li format="talk"&gt;</li>
+                            <li id="talk2" class="row" format="talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1">I have done that before... Let me have a look</div>
+                                <div class="talk-format col-2 px-1">Talk</div>
+                                <div class="talk-presenter col-2 px-1">Dom Raniszewski</div>
+                                <div class="talk-time col-2 px-1">11:55am</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&emsp;&lt;li id="break1" &gt;</li>
+                            <li class="row" id="break1">
+                                <div class="offset-md-1 col-11" session-busy="false">Lunch Break</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&lt;/ul&gt;</li>
+                        </ul>
+                        <div>&lt;/div&gt;</div>
+                    </div>
+                    <div id="afternoon-session" class="col-6 my-3">
+                        <div>&lt;div id="afternoon-session" &gt;</div>
+                        <div class="session-name">&emsp;&lt;div class="session-name"&gt;Afternoon Session &lt;div&gt;</div>
+                        <ul class="session" session-busy="true">
+                            <li>&emsp;&lt;ul&gt;</li>
+                            <li>&emsp;&emsp;&lt;li format="talk"&gt;</li>
+                            <li id="talk1" class="row" format="talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1">Headwall smashing your way through React Hooks & Redux</div>
+                                <div class="talk-format col-2 px-1">Talk</div>
+                                <div class="talk-presenter col-2 px-1">William Stafford</div>
+                                <div class="talk-time col-2 px-1">1:00pm</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&emsp;&lt;li format="quick-talk"&gt;</li>
+                            <li id="talk2" class="row" format="quick-talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1">Fail Fest</div>
+                                <div class="talk-format col-2 px-1">Experience Sharing</div>
+                                <div class="talk-presenter col-2 px-1"></div>
+                                <div class="talk-time col-2 px-1">2:15pm</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&emsp;&lt;li id="break2" &gt;</li>
+                            <li class="row" id="break2">
+                                <div class="offset-md-1 col-11" session-busy="false">Refreshments at 1 Castlereagh</div>
+                            </li>
+                            <li>&emsp;&emsp;&lt;/li&gt;</li>
+                            <li>&emsp;&lt;/ul&gt;</li>
+                        </ul>
+                        <div>&lt;/div&gt;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+    <slide slide-sequence-number="6" entry-animation="grow">
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center">
+                <h1>Child and Sibling Selectors</h1>
+            </div>
+            <div class="row no-gutters pt-1 h-100 justify-content-center">
+
+                <input type="checkbox" id="child-selector-1" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="child-selector-2" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="child-selector-3" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="child-selector-4" name="css-selectors" class="no-area" />
+                
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="child-selector-1">ul [id*="break"]</label>
+                    <span class="css-selector-describe-text">every child - recursively</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="child-selector-2">li > .talk-topic</label>
+                    <span class="css-selector-describe-text">every child - non recursively</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="child-selector-3">li + li</label>
+                    <span class="css-selector-describe-text">next sibling</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="child-selector-4">h1 ~ div[id$="session"]</label>
+                    <span class="css-selector-describe-text">general sibling</span>
+                </div>
+
+                <div class="demo-container">
+                    <h1 class="col-12 my-3">
+                        Back 2 Base Schedule
+                    </h1>
+                    <div id="morning-session" class="col-12 my-3">
+                        <div class="session-name">Morning Session</div>
+                        <ul class="session">
+                            <li id="talk1" class="row" format="key-note talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1 text-break">Key Note: Innovation and the elephant int the room</div>
+                                <div class="talk-format col-2 px-1">Key Note</div>
+                                <div class="talk-presenter col-2 px-1">Nelly Sattari</div>
+                                <div class="talk-time col-2 px-1">10:00am</div>
+                            </li>
+                            <li id="talk2" class="row" format="training">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1">I have done that before... Let me have a look</div>
+                                <div class="talk-format col-2 px-1">Training</div>
+                                <div class="talk-presenter col-2 px-1">Dom Raniszewski</div>
+                                <div class="talk-time col-2 px-1">11:55am</div>
+                            </li>
+                            <li class="row" id="break1">
+                                <div class="offset-md-1 col-11" session-busy="false">Lunch Break</div>
+                            </li>                            
+                        </ul>
+                    </div>
+                    <div id="afternoon-session" class="col-12 my-3">
+                        <div class="session-name">Afternoon Session</div>
+                        <ul  class="session" session-busy="true">
+                            <li id="talk1" class="row" format="quick-talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1">Headwall smashing your way through React Hooks & Redux</div>
+                                <div class="talk-format col-2 px-1">Workshop</div>
+                                <div class="talk-presenter col-2 px-1">Nelly Sattari</div>
+                                <div class="talk-time col-2 px-1">2:00pm</div>
+                            </li>
+                            <li id="talk2" class="row" format="hands-on">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 px-1">Fail Fest</div>
+                                <div class="talk-format col-2 px-1">Talk</div>
+                                <div class="talk-presenter col-2 px-1"></div>
+                                <div class="talk-time col-2 px-1">3:00pm</div>
+                            </li>
+                            <li class="row" id="break2">
+                                <div class="offset-md-1 col-11" session-busy="false">Refreshments at 1 Castlereagh</div>
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+    <slide slide-sequence-number="7" entry-animation="grow">
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center">
+                <h1>Pseudo-Class Selectors</h1>
+            </div>
+            <div class="row no-gutters pt-1 h-100 justify-content-center">
+
+                <input type="checkbox" id="pseudo-selector-1" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="pseudo-selector-2" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="pseudo-selector-3" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="pseudo-selector-4" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="pseudo-selector-5" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="pseudo-selector-6" name="css-selectors" class="no-area" />
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="pseudo-selector-1">li:hover</label>
+                    <span class="css-selector-describe-text">hover on an element</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="pseudo-selector-2">li input:checked</label>
+                    <span class="css-selector-describe-text">if the input is checked</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="pseudo-selector-3">:enabled, :disabled</label>
+                    <span class="css-selector-describe-text">inputs elements which are enabled or disabled</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="pseudo-selector-4">:active,  :focus</label>
+                    <span class="css-selector-describe-text">when user clicks, element is focused</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="pseudo-selector-5">:link, :visited</label>
+                    <span class="css-selector-describe-text">links which have been not visited or visited </span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="pseudo-selector-6">:lang</label>
+                    <span class="css-selector-describe-text">based on the language of the page</span>
+                </div>
+\
+
+                <div class="demo-container">
+                    <h1 class="col-12 my-3">
+                        Back 2 Base Schedule
+                    </h1>
+                    <div id="morning-session" class="col-12 my-3">
+                        <div class="session-name">Morning Session</div>
+                        <ul class="session">
+                            <li id="talk1" class="row" format="key-note talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 mx-1 text-break">Key Note: Innovation and the elephant int the room</div>
+                                <div class="talk-format col-2 mx-1">Key Note</div>
+                                <div class="talk-presenter col-2 mx-1">Nelly Sattari</div>
+                                <div class="talk-time col-2 mx-1">9:20am</div>
+                            </li>
+                            <li id="talk2" class="row" format="talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 mx-1">I have done that before... Let me have a look</div>
+                                <div class="talk-format col-2 mx-1">Talk</div>
+                                <div class="talk-presenter col-2 mx-1">Dom Raniszewski</div>
+                                <div class="talk-time col-2 mx-1">11:55am</div>
+                            </li>
+                            <li class="row" id="break1">
+                                <div class="offset-md-1 col-11" session-busy="false">Lunch Break</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="afternoon-session" class="col-12 my-3">
+                        <div class="session-name">Afternoon Session</div>
+                        <ul class="session" session-busy="true">
+                            <li id="talk1" class="row" format="talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 mx-1">Headwall smashing your way through React Hooks & Redux</div>
+                                <div class="talk-format col-2 mx-1">Talk</div>
+                                <div class="talk-presenter col-2 mx-1">William Stafford</div>
+                                <div class="talk-time col-2 mx-1">1:00pm</div>
+                            </li>
+                            <li id="talk2" class="row" format="quick-talk">
+                                <input class="col-1 offset-md-1" type="checkbox"  />
+                                <div class="talk-topic col-3 mx-1">Fail Fest</div>
+                                <div class="talk-format col-2 mx-1">Experience Sharing</div>
+                                <div class="talk-presenter col-2 mx-1"></div>
+                                <div class="talk-time col-2 mx-1">2:15pm</div>
+                            </li>
+                            <li class="row" id="break2">
+                                <div class="offset-md-1 col-11" session-busy="false">Refreshments at 1 Castlereagh</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+    <slide slide-sequence-number="8" entry-animation="grow">
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center">
+                <h1>Structural Pseudo-Class Selectors</h1>
+            </div>
+            <div class="row no-gutters pt-1 h-100 justify-content-center">
+
+                <input type="checkbox" id="struct-pseudo-selector-1" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="struct-pseudo-selector-2" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="struct-pseudo-selector-3" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="struct-pseudo-selector-4" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="struct-pseudo-selector-5" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="struct-pseudo-selector-6" name="css-selectors" class="no-area" />
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="struct-pseudo-selector-1">h1:first-child <br />div[id$="session"] > div:first-child<br /> div:last-child</label>
+                    <span class="css-selector-describe-text">selects the first or last child </span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="struct-pseudo-selector-2">:nth-child(2n+1), nth-last-child</label>
+                    <span class="css-selector-describe-text">selects the nth child - 2n+1 from start or end</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="struct-pseudo-selector-3">div:first-of-type, div:last-last-of-type</label>
+                    <span class="css-selector-describe-text">selects the first or last child of given type</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="struct-pseudo-selector-4">div:nth-of-type, div:nth-last-of-type</label>
+                    <span class="css-selector-describe-text">selects the nth child of given type- 2n+1</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="struct-pseudo-selector-5">:only-child, :only-of-type</label>
+                    <span class="css-selector-describe-text">Self explanatory</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="struct-pseudo-selector-6">:empty</label>
+                    <span class="css-selector-describe-text">When the element is empty</span>
+                </div>
+                
+
+                <div class="demo-container">
+                    <h1 class="col-12 my-3">
+                        Back 2 Base Schedule
+                    </h1>
+                    <div id="morning-session" class="col-12 my-3">
+                        <div class="session-name">Morning Session</div>
+                        <ul class="session">
+                            <li id="talk1" class="row" format="key-note talk">
+                                <input class="col-1 offset-md-1" type="checkbox" />
+                                <div class="talk-topic col-3 mx-1 text-break">Innovation and the elephant int the room</div>
+                                <div class="talk-format col-2 mx-1">Key Note</div>
+                                <div class="talk-presenter col-2 mx-1">Nelly Sattari</div>
+                                <div class="talk-time col-2 mx-1">9:20am</div>
+                            </li>
+                            <li id="talk2" class="row" format="training">
+                                <input class="col-1 offset-md-1" type="checkbox" />
+                                <div class="talk-topic col-3 mx-1">CSS Tricks</div>
+                                <div class="talk-format col-2 mx-1">Training</div>
+                                <div class="talk-presenter col-2 mx-1">Saurabh Pawar</div>
+                                <div class="talk-time col-2 mx-1">11:10am</div>
+                            </li>
+                            <li id="talk2" class="row" format="talk">
+                                <input class="col-1 offset-md-1" type="checkbox" />
+                                <div class="talk-topic col-3 mx-1">I have done that before... Let me have a look</div>
+                                <div class="talk-format col-2 mx-1">Talk</div>
+                                <div class="talk-presenter col-2 mx-1">Dom Raniszewski</div>
+                                <div class="talk-time col-2 mx-1">11:55am</div>
+                             </li>
+                            <li class="row" id="break1">
+                                <div class="offset-md-1 col-11" session-busy="false">Lunch Break</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="afternoon-session" class="col-12 my-3">
+                        <div class="session-name">Afternoon Session</div>
+                        <ul class="session" session-busy="true">
+                            <li id="talk1" class="row" format="talk">
+                                <input class="col-1 offset-md-1" type="checkbox" />
+                                <div class="talk-topic col-3 mx-1">Headwall smashing your way through React Hooks & Redux</div>
+                                <div class="talk-format col-2 mx-1">Talk</div>
+                                <div class="talk-presenter col-2 mx-1">William Stafford</div>
+                                <div class="talk-time col-2 mx-1">1:00pm</div>
+                            </li>
+                            <li id="talk2" class="row" format="quick-talk">
+                                <input class="col-1 offset-md-1" type="checkbox" />
+                                <div class="talk-topic col-3 mx-1">Fail Fest</div>
+                                <div class="talk-format col-2 mx-1">Experience Sharing</div>
+                                <div class="talk-presenter col-2 mx-1"></div>
+                                <div class="talk-time col-2 mx-1">2:15pm</div>
+                            </li>
+                            <li class="row" id="break2">
+                                <div class="offset-md-1 col-11" session-busy="false">Refreshments at 1 Castlereagh</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+    <slide slide-sequence-number="9" entry-animation="grow">
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center">
+                <h1>Negation and Psuedo Element Selectors</h1>
+            </div>
+            <div class="row no-gutters pt-1 h-100 justify-content-center">
+
+                <input type="checkbox" id="pseudo-elements-selector-1" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="pseudo-elements-selector-2" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="pseudo-elements-selector-3" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="pseudo-elements-selector-4" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="pseudo-elements-selector-5" name="css-selectors" class="no-area" />
+                <input type="checkbox" id="pseudo-elements-selector-6" name="css-selectors" class="no-area" />
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="pseudo-elements-selector-1">:not([id^="talk"])</label>
+                    <span class="css-selector-describe-text">elements that do not match</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="pseudo-elements-selector-2">div::first-letter</label>
+                    <span class="css-selector-describe-text">Self explanatory</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="pseudo-elements-selector-3">div[.talk-presenter]::first-line</label>
+                    <span class="css-selector-describe-text">Self explanatory</span>
+                </div>
+
+                <div class="css-selector-code-container">
+                    <label class="css-selector-syntax-text" for="pseudo-elements-selector-4">li input:before and :after</label>
+                    <span class="css-selector-describe-text">Adds content before and after elements content purely by CSS</span>
+                </div>
+
+
+                <div class="demo-container">
+                    <h1 class="col-12 my-3">
+                        Back 2 Base Schedule
+                    </h1>
+                    <div id="morning-session" class="col-12 my-3">
+                        <div class="session-name">morning session</div>
+                        <ul class="session">
+                            <li id="talk1" class="row" format="key-note talk">
+                                <input class="col-1 offset-md-1" type="checkbox" />
+                                <div class="talk-topic col-3 mx-1 text-break">key Note: Innovation and the elephant int the room</div>
+                                <div class="talk-format col-2 mx-1">key note</div>
+                                <div class="talk-presenter col-2 mx-1">nelly sattari</div>
+                                <div class="talk-time col-2 mx-1">9:00am</div>
+                            </li>
+                            <li id="talk2" class="row" format="training">
+                                <input class="col-1 offset-md-1" type="checkbox" />
+                                <div class="talk-topic col-3 mx-1">CSS Tricks</div>
+                                <div class="talk-format col-2 mx-1">training</div>
+                                <div class="talk-presenter col-2 mx-1">saurabh pawar</div>
+                                <div class="talk-time col-2 mx-1">11:10am</div>
+                            </li>
+                            <li id="talk2" class="row" format="talk">
+                                <input class="col-1 offset-md-1" type="checkbox" />
+                                <div class="talk-topic col-3 mx-1">i have done that before... Let me have a look</div>
+                                <div class="talk-format col-2 mx-1">talk</div>
+                                <div class="talk-presenter col-2 mx-1">dom raniszewski</div>
+                                <div class="talk-time col-2 mx-1">11:55am</div>
+                            </li>
+                            <li class="row" id="break1">
+                                <div class="offset-md-1 col-11" session-busy="false">lunch break</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="afternoon-session" class="col-12 my-3">
+                        <div class="session-name">afternoon session</div>
+                        <ul class="session" session-busy="true">
+                            <li id="talk1" class="row" format="talk">
+                                <input class="col-1 offset-md-1" type="checkbox" />
+                                <div class="talk-topic col-3 mx-1">Headwall smashing your way through React Hooks & Redux</div>
+                                <div class="talk-format col-2 mx-1">talk</div>
+                                <div class="talk-presenter col-2 mx-1">William Stafford</div>
+                                <div class="talk-time col-2 mx-1">1:00pm</div>
+                            </li>
+                            <li id="talk2" class="row" format="quick-talk">
+                                <input class="col-1 offset-md-1" type="checkbox" />
+                                <div class="talk-topic col-3 mx-1">fail fest</div>
+                                <div class="talk-format col-2 mx-1">Experience Sharing</div>
+                                <div class="talk-presenter col-2 mx-1"></div>
+                                <div class="talk-time col-2 mx-1">2:15pm</div>
+                            </li>
+                            <li class="row" id="break2">
+                                <div class="offset-md-1 col-11" session-busy="false">Refreshments at 1 Castlereagh</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+    <slide slide-sequence-number="10" entry-animation="grow">
+        <div class="container-fluid">
+            <div class="row no-gutters h-100 flex-center-items">
+                <input type="checkbox" id="demo-step-1" name="demo" class="no-area" />
+                <label class="col-3 text-center demo-step-label" for="demo-step-1"></label>
+
+                <input type="checkbox" id="demo-step-2" name="demo" class="no-area" />
+                <label class="col-3 text-center demo-step-label" for="demo-step-2"></label>
+
+                <input type="checkbox" id="demo-step-3" name="demo" class="no-area" />
+                <label class="col-3 text-center demo-step-label" for="demo-step-3"></label>
+
+                <input type="checkbox" id="demo-step-4" name="demo" class="no-area" />
+                <label class="col-3 text-center demo-step-label" for="demo-step-4"></label>
+
+                <input type="checkbox" id="demo-step-5" name="demo" class="no-area" />
+                <label class="col-3 text-center demo-step-label" for="demo-step-5"></label>
+
+                <input type="checkbox" id="demo-step-6" name="demo" class="no-area" />
+                <label class="col-3 text-center demo-step-label" for="demo-step-6"></label>
+
+                <input type="checkbox" id="demo-step-7" name="demo" class="no-area" />
+                <label class="col-3 text-center demo-step-label" for="demo-step-7"></label>
+
+                <input type="checkbox" id="demo-step-8" name="demo" class="no-area" />
+                <label class="col-3 text-center demo-step-label" for="demo-step-8"></label>
+
+                <div class="demo-container h-75 flex-center-items">
+                    <input type="radio" id="demo-button1" name="demo" checked />`
+                    <input type="radio" id="demo-button2" name="demo" />
+                    <input type="radio" id="demo-button3" name="demo" />
+                    <input type="radio" id="demo-button4" name="demo" />
+                    <input type="radio" id="demo-button5" name="demo" />
+                    <input type="radio" id="demo-button6" name="demo" />
+                    <input type="radio" id="demo-button7" name="demo" />
+                    <input type="radio" id="demo-button8" name="demo" />
+                    <input type="radio" id="demo-button9" name="demo" />
+
+                    <label for="demo-button1" class="demo-nav-button"></label>
+                    <label for="demo-button2" class="demo-nav-button"></label>
+                    <label for="demo-button3" class="demo-nav-button"></label>
+                    <label for="demo-button4" class="demo-nav-button"></label>
+                    <label for="demo-button5" class="demo-nav-button"></label>
+                    <label for="demo-button6" class="demo-nav-button"></label>
+                    <label for="demo-button7" class="demo-nav-button"></label>
+                    <label for="demo-button8" class="demo-nav-button"></label>
+                    <label for="demo-button9" class="demo-nav-button"></label>
+
+                    <div class="w-100"></div>
+
+                    <div id="demo-box1" class="demo-box blue-background"></div>
+                    <div id="demo-box2" class="demo-box grey-background"></div>
+                    <div id="demo-box3" class="demo-box blue-background"></div>
+                    <div id="demo-box4" class="demo-box grey-background"></div>
+                    <div id="demo-box5" class="demo-box blue-background"></div>
+                    <div id="demo-box6" class="demo-box grey-background"></div>
+                    <div id="demo-box7" class="demo-box blue-background"></div>
+                    <div id="demo-box8" class="demo-box grey-background"></div>
+                    <div id="demo-box9" class="demo-box blue-background"></div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </slide>
+    <slide slide-sequence-number="11" entry-animation="grow">
+        <div class="d-flex h-100 w-100 justify-content-center align-items-center "><h1 class="slide-header">Thank You!</h1></div>        
+    </slide>
+</body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url("webfonts/fa-solid-900.woff2") format("woff2");
+}

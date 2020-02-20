@@ -1,0 +1,249 @@
+body {
+    counter-reset: demo-nav-button-counter, demo-box-counter, demo-steps-counter;
+}
+
+input[name="demo"]{
+    height: 2vw;
+    width: 2vw;
+}
+
+.demo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    counter-increment: demo-box-counter;
+}
+
+.demo-box:before {
+    content: counter(demo-box-counter);
+}
+
+.demo-nav-button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: FontAwesome;
+    font-size: 2em;
+    width: 5vw;
+    height: 5vw;
+    z-index: 2;
+    counter-increment: demo-nav-button-counter;
+}
+
+
+.demo-nav-button:before {
+    content: counter(demo-nav-button-counter);
+}
+
+.demo-step-label{
+    counter-increment: demo-steps-counter;
+}
+
+
+.demo-step-label:before {
+    content: "Step " counter(demo-steps-counter);
+}
+
+.demo-step-label:checked {
+    font-size: 2em;
+}
+
+
+#demo-step-1:checked ~ label[for="demo-step-1"]:before {
+    content: 'input[name="demo"]';
+    font-size: 2em;
+}
+
+#demo-step-2:checked ~ label[for="demo-step-2"]:before {
+    content: '.demo-nav-button\A{  visibility: hidden;  }';
+    white-space: pre-wrap;
+    font-size: 1.5em;
+}
+
+#demo-step-3:checked ~ label[for="demo-step-3"]:before {
+    content: '#demo-button2:checked ~\Alabel[for="demo-button3"]\A{ visibility: visible; }';
+    white-space: pre-wrap;
+    font-size: 1.5em;
+}
+
+#demo-step-4:checked ~ label[for="demo-step-4"]:before {
+    content: '.demo-box\A{  visibility: hidden;  }';
+    white-space: pre-wrap;
+    font-size: 1.5em;
+}
+
+#demo-step-5:checked ~ label[for="demo-step-5"]:before {
+    content: '#demo-button1:checked ~ #demo-box1';
+    white-space: pre-wrap;
+    font-size: 1.5em;
+}
+
+#demo-step-6:checked ~ label[for="demo-step-6"]:before {
+    content: 'Everything is Big';
+    font-size: 1.5em;
+}
+
+#demo-step-7:checked ~ label[for="demo-step-7"]:before {
+    content: '#demo-button1:checked ~\Alabel[for="demo-button2"]:before\A{content: "\\f0a9"}';
+    white-space: pre-wrap;
+    font-size: 1.5em;
+}
+
+#demo-step-8:checked ~ label[for="demo-step-8"]:before {
+    content: 'Make the box full size \A Change background';
+    white-space: pre-wrap;
+    font-size: 1.5em;
+}
+
+
+#demo-step-1:checked ~ .demo-container input[name="demo"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+#demo-step-2:checked ~ .demo-container .demo-nav-button {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#demo-step-3:checked ~ .demo-container #demo-button1:checked ~ label[for="demo-button2"],
+#demo-step-3:checked ~ .demo-container #demo-button2:checked ~ label[for="demo-button3"],
+#demo-step-3:checked ~ .demo-container #demo-button3:checked ~ label[for="demo-button4"],
+#demo-step-3:checked ~ .demo-container #demo-button4:checked ~ label[for="demo-button5"],
+#demo-step-3:checked ~ .demo-container #demo-button5:checked ~ label[for="demo-button6"],
+#demo-step-3:checked ~ .demo-container #demo-button6:checked ~ label[for="demo-button7"],
+#demo-step-3:checked ~ .demo-container #demo-button7:checked ~ label[for="demo-button8"],
+#demo-step-3:checked ~ .demo-container #demo-button8:checked ~ label[for="demo-button9"] {
+    width: 5vw;
+    height: 5vw;
+    visibility: visible;
+}
+
+#demo-step-3:checked ~ .demo-container #demo-button2:checked ~ label[for="demo-button1"],
+#demo-step-3:checked ~ .demo-container #demo-button3:checked ~ label[for="demo-button2"],
+#demo-step-3:checked ~ .demo-container #demo-button4:checked ~ label[for="demo-button3"],
+#demo-step-3:checked ~ .demo-container #demo-button5:checked ~ label[for="demo-button4"],
+#demo-step-3:checked ~ .demo-container #demo-button6:checked ~ label[for="demo-button5"],
+#demo-step-3:checked ~ .demo-container #demo-button7:checked ~ label[for="demo-button6"],
+#demo-step-3:checked ~ .demo-container #demo-button8:checked ~ label[for="demo-button7"],
+#demo-step-3:checked ~ .demo-container #demo-button9:checked ~ label[for="demo-button8"] {
+    width: 5vw;
+    height: 5vw;
+    visibility: visible;
+}
+
+#demo-step-4:checked ~ .demo-container .demo-box {
+    visibility: hidden;
+    width: 0px;
+}
+
+#demo-step-5:checked ~ .demo-container #demo-button1:checked ~ #demo-box1,
+#demo-step-5:checked ~ .demo-container #demo-button2:checked ~ #demo-box2,
+#demo-step-5:checked ~ .demo-container #demo-button3:checked ~ #demo-box3,
+#demo-step-5:checked ~ .demo-container #demo-button4:checked ~ #demo-box4,
+#demo-step-5:checked ~ .demo-container #demo-button5:checked ~ #demo-box5,
+#demo-step-5:checked ~ .demo-container #demo-button6:checked ~ #demo-box6,
+#demo-step-5:checked ~ .demo-container #demo-button7:checked ~ #demo-box7,
+#demo-step-5:checked ~ .demo-container #demo-button8:checked ~ #demo-box8,
+#demo-step-5:checked ~ .demo-container #demo-button9:checked ~ #demo-box9 {
+    width: 10%;
+    visibility: visible;
+}
+
+
+
+#demo-step-6:checked ~ .demo-container #demo-button1:checked ~ #demo-box1,
+#demo-step-6:checked ~ .demo-container #demo-button2:checked ~ #demo-box2,
+#demo-step-6:checked ~ .demo-container #demo-button3:checked ~ #demo-box3,
+#demo-step-6:checked ~ .demo-container #demo-button4:checked ~ #demo-box4,
+#demo-step-6:checked ~ .demo-container #demo-button5:checked ~ #demo-box5,
+#demo-step-6:checked ~ .demo-container #demo-button6:checked ~ #demo-box6,
+#demo-step-6:checked ~ .demo-container #demo-button7:checked ~ #demo-box7,
+#demo-step-6:checked ~ .demo-container #demo-button8:checked ~ #demo-box8,
+#demo-step-6:checked ~ .demo-container #demo-button9:checked ~ #demo-box9 {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    width:40%;
+    height: 60%;
+}
+
+#demo-step-6:checked ~ .demo-container .demo-nav-button {
+    font-size: 4vw;
+}
+
+#demo-step-7:checked ~ .demo-container #demo-button1:checked ~ label[for="demo-button2"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button2:checked ~ label[for="demo-button3"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button3:checked ~ label[for="demo-button4"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button4:checked ~ label[for="demo-button5"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button5:checked ~ label[for="demo-button6"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button6:checked ~ label[for="demo-button7"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button7:checked ~ label[for="demo-button8"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button8:checked ~ label[for="demo-button9"]:before {
+    content: '\f0a9';
+    position: absolute;
+    top: 40%;
+    right: 4vw;
+}
+
+#demo-step-7:checked ~ .demo-container #demo-button2:checked ~ label[for="demo-button1"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button3:checked ~ label[for="demo-button2"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button4:checked ~ label[for="demo-button3"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button5:checked ~ label[for="demo-button4"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button6:checked ~ label[for="demo-button5"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button7:checked ~ label[for="demo-button6"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button8:checked ~ label[for="demo-button7"]:before,
+#demo-step-7:checked ~ .demo-container #demo-button9:checked ~ label[for="demo-button8"]:before {
+    content: '\f0a8';
+    position: absolute;
+    top: 40%;
+    left: 4vw;
+}
+
+#demo-step-7:checked ~ .demo-container .demo-nav-button {
+    color: #ffa7a4;
+}
+
+#demo-step-8:checked ~ .demo-container .demo-box:before{
+    content:'';
+}
+
+#demo-step-8:checked ~ .demo-container .demo-box{
+    position:absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#demo-step-8:checked ~ .demo-container #demo-box2 {
+    background-image: url("images/moon2.png");
+}
+#demo-step-8:checked ~ .demo-container #demo-box3 {
+    background-image: url("images/moon3.png");
+}
+#demo-step-8:checked ~ .demo-container #demo-box4 {
+    background-image: url("images/moon4.png");
+}
+#demo-step-8:checked ~ .demo-container #demo-box5 {
+    background-image: url("images/moon5.png");
+}
+#demo-step-8:checked ~ .demo-container #demo-box6 {
+    background-image: url("images/moon6.png");
+}
+#demo-step-8:checked ~ .demo-container #demo-box7 {
+    background-image: url("images/moon7.png");
+}
+#demo-step-8:checked ~ .demo-container #demo-box8 {
+    background-image: url("images/moon8.png");
+}
+#demo-step-8:checked ~ .demo-container #demo-box9 {
+    background-image: url("images/moon9.png");
+}

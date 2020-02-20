@@ -1,0 +1,292 @@
+
+<slide slide-sequence-number="4" entry-animation="slide_left">
+    <div class="container">
+        <div class="row no-gutters justify-content-center">
+            <h1>Common CSS Selectors</h1>
+        </div>
+        <div class="row no-gutters pt-5">
+            <input type="radio" id="selector-tag" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-tag">h1</label>
+
+            <input type="radio" id="selector-class" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-class">.some-container</label>
+
+            <input type="radio" id="selector-id" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-id">#element-id</label>
+
+            <input type="radio" id="selector-comma" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-comma">h1, #element-id</label>
+
+            <input type="radio" id="selector-space" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-space">div p</label>
+
+            <input type="radio" id="selector-plus" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-plus">h1 + div</label>
+
+            <input type="radio" id="selector-siblings" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-siblings">.some-container ~ #element-id</label>
+
+            <input type="radio" id="selector-attr" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-attr">[for="back2base"]</label>
+
+            <input type="radio" id="selector-attr2" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-attr2">[avengers-charachter^="incredible"]</label>
+
+            <input type="radio" id="selector-checked" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-checked">:checked</label>
+
+            <input type="radio" id="selector-firstchild" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-firstchild">p:first-child</label>
+
+            <input type="radio" id="selector-nthchild" name="css-selectors" class="no-area" />
+            <label class="col-3 text-center" for="selector-nthchild">p:nth-child(2)</label>
+
+            <div class="transparent-container">
+                <h1 class="col-12 mb-3 mt-5">
+                    &lt;h1&gt;CSS Selector Demo&lt;/h1&gt;
+                </h1>
+                <div class="w-100 some-container my-3" for="back2base">
+                    &lt;div class="some-container" for="back2base"&gt;
+                    <p class="col-12">&lt;p&gt;Paragraph 1. &lt;/p&gt;</p>
+                    <p class="col-12">&lt;/p&gt;Paragraph 2.&lt;/p&gt;</p>
+                    &emsp;<input type="checkbox" id="checked-input-navigation" checked />
+                    <label for="checked-input-navigation">&lt;input type="checkbox" checked /&gt;</label>
+                    <p></p>
+                    &lt;/div&gt;
+                </div>
+                <div id="element-id" class="my-3">
+                    &lt;div id="element-id" &gt;My id is element-id
+                    <ul>
+                        &lt;ul&gt;
+                        <li>
+                            &ensp;&lt;li&gt;
+                            &emsp;<p class="col-12">&lt;p&gt;This is paragraph3&lt;/p&gt;</p>
+                            &ensp;&lt;/li&gt;
+                        </li>
+                        <li avengers-charachter="incredible-hulk">
+                            &ensp;&lt;li avengers-charachter="incredible-hulk"&gt;
+                            &ensp;&lt;/li&gt;
+                        </li>
+                        &lt;/ul&gt;
+                    </ul>
+                    &lt;/div&gt;
+                </div>
+            </div>
+
+        </div>
+    </div>
+</slide>
+<div id="slide5" class="slide" entry="slide_left">
+    <div class="container">
+        <div class="row no-gutters h-100 justify-content-center align-items-center">
+            <div class="col">
+                <div class="slide-header text-center">Flex Box</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="slide6" class="slide" entry="slide_bottom">
+    <div class="container px-0">
+        <h1>Flex-grow | Flex-shrink | Flex-basis </h1>
+        <div class="col-12 my-4">
+            <div class="w-100">Flex Grow</div>
+            <input type="radio" id="flex-grow-1" name="flex-grow" class="no-area" />
+            <label for="flex-grow-1" class=" mx-3">Flex grow 1</label>
+            <input type="radio" id="flex-grow-2" name="flex-grow" class="no-area" />
+            <label for="flex-grow-2" class=" mx-3">Flex grow 2</label>
+            <input type="radio" id="flex-grow-3" name="flex-grow" class="no-area" />
+            <label for="flex-grow-3" class=" mx-3">Flex grow 8</label>
+
+            <div class="transparent-container">
+                <div id="flex-grow-one" class="square-box grey-background my-flex-grow-1"></div>
+                <div id="flex-grow-two" class="square-box blue-background my-flex-grow-2"></div>
+            </div>
+        </div>
+
+        <div class="col-12 my-4">
+            <div class="w-100">Flex Shrink</div>
+            <input type="radio" id="flex-shrink-1" name="flex-shrink" class="no-area" />
+            <label for="flex-shrink-1" class=" mx-3">Flex shrink 1</label>
+            <input type="radio" id="flex-shrink-2" name="flex-shrink" class="no-area" />
+            <label for="flex-shrink-2" class=" mx-3">Flex shrink 2</label>
+            <input type="radio" id="flex-shrink-3" name="flex-shrink" class="no-area" />
+            <label for="flex-shrink-3" class=" mx-3">Flex shrink 8</label>
+
+            <div class="transparent-container">
+                <div id="flex-shrink-one" class="square-box grey-background my-flex-shrink-1"></div>
+                <div id="flex-shrink-two" class="square-box blue-background my-flex-shrink-2"></div>
+            </div>
+        </div>
+
+        <div class="col-12 my-4">
+            <div class="w-100">Flex Basis</div>
+            <input type="radio" id="flex-basis-1" name="flex-basis" class="no-area" />
+            <label for="flex-basis-1" class=" mx-3">Flex basis 50</label>
+            <input type="radio" id="flex-basis-2" name="flex-basis" class="no-area" />
+            <label for="flex-basis-2" class=" mx-3">Flex basis 100</label>
+
+            <div class="transparent-container">
+                <div id="flex-basis-one" class="square-box grey-background my-flex-basis-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="slide7" class="slide" entry="slide_bottom">
+    <div class="container px-0">
+        <h1>Flex-direction | Flex-wrap</h1>
+        <div class="col">
+            <div>Flex Direction</div>
+            <input type="radio" id="flex-direction-1" name="flex-direction" class="no-area" />
+            <label for="flex-direction-1" class=" mx-3">Row</label>
+            <input type="radio" id="flex-direction-2" name="flex-direction" class="no-area" />
+            <label for="flex-direction-2" class=" mx-3">Column</label>
+            <input type="radio" id="flex-direction-3" name="flex-direction" class="no-area" />
+            <label for="flex-direction-3" class=" mx-3">Reverse Row</label>
+            <input type="radio" id="flex-direction-4" name="flex-direction" class="no-area" />
+            <label for="flex-direction-4" class=" mx-3">Reverse Column</label>
+            <div>Flex Wrap</div>
+            <input type="radio" id="flex-wrap-1" name="flex-wrap" class="no-area" />
+            <label for="flex-wrap-1" class=" mx-3">Wrap</label>
+            <input type="radio" id="flex-wrap-2" name="flex-wrap" class="no-area" />
+            <label for="flex-wrap-2" class=" mx-3">No Wrap</label>
+            <input type="radio" id="flex-wrap-3" name="flex-wrap" class="no-area" />
+            <label for="flex-wrap-3" class=" mx-3">Reverse Wrap</label>
+            <div class="transparent-container my-flex-wrap flex-direction">
+                <div id="" class="square-box grey-background wh-10">1</div>
+                <div id="" class="square-box blue-background wh-10">2</div>
+                <div id="" class="square-box grey-background wh-10">3</div>
+                <div id="" class="square-box blue-background wh-10">4</div>
+                <div id="" class="square-box grey-background wh-10">5</div>
+                <div id="" class="square-box blue-background wh-10">6</div>
+                <div id="" class="square-box grey-background wh-10">7</div>
+                <div id="" class="square-box blue-background wh-10">8</div>
+                <div id="" class="square-box grey-background wh-10">9</div>
+                <div id="" class="square-box blue-background wh-10">10</div>
+                <div id="" class="square-box grey-background wh-10">11</div>
+                <div id="" class="square-box blue-background wh-10">12</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="slide8" class="slide" entry="slide_bottom">
+    <div class="container px-0">
+        <h1>Alignment</h1>
+        <div class="col">
+            <div>Justify Content</div>
+            <input type="radio" id="justify-content-1" name="justify-content" class="no-area" />
+            <label for="justify-content-1" class=" mx-3">Start</label>
+            <input type="radio" id="justify-content-2" name="justify-content" class="no-area" />
+            <label for="justify-content-2" class=" mx-3">Center</label>
+            <input type="radio" id="justify-content-3" name="justify-content" class="no-area" />
+            <label for="justify-content-3" class=" mx-3">End</label>
+            <input type="radio" id="justify-content-4" name="justify-content" class="no-area" />
+            <label for="justify-content-4" class=" mx-3">Space Between</label>
+            <div>Align Items</div>
+            <input type="radio" id="align-items-1" name="align-items" class="no-area" />
+            <label for="align-items-1" class=" mx-3">Start</label>
+            <input type="radio" id="align-items-2" name="align-items" class="no-area" />
+            <label for="align-items-2" class=" mx-3">Center</label>
+            <input type="radio" id="align-items-3" name="align-items" class="no-area" />
+            <label for="align-items-3" class=" mx-3">End</label>
+            <input type="radio" id="align-items-4" name="align-items" class="no-area" />
+            <label for="align-items-4" class=" mx-3">Baseline</label>
+            <div class="transparent-container h-50 align-items justify-content">
+                <div id="" class="square-box grey-background w-15 h-25">1</div>
+                <div id="" class="square-box grey-background wh-10">2</div>
+                <div id="" class="square-box blue-background h-25 w-10">3</div>
+                <div id="" class="square-box grey-background h-15 w-15">4</div>
+                <div id="" class="square-box blue-background wh-15">5</div>
+                <div id="" class="square-box grey-background wh-10">6</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="slide9" class="slide" entry="slide_left">
+    <div class="container">
+        <div class="row no-gutters h-100 justify-content-center align-items-center">
+            <div class="col">
+                <div class="slide-header text-center">Media Queries</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="slide10" class="slide" entry="slide_bottom">
+    <div class="container px-0">
+        <div>Syntax:</div>
+        <div class="font-italic">@media all and (min-width: 576px) { ... }</div>
+        <br />
+
+        <div>Commonly used properties:</div>
+        <div class="font-italic">min-width, max-width, min-height, max-height, orientation, resolution</div>
+        <br />
+
+        <div>Examples:</div>
+        <div class="row no-gutters mediaquery-code">
+            <div class="col-6">
+                <xmp>
+                    .mediaquery-fontsize {
+                    font-size: 10px;
+                    }
+
+                    .mediaquery-display {
+                    display: none;
+                    }
+
+                    .mediaquery-menu {
+                    min-width: 97%;
+                    }
+                </xmp>
+            </div>
+            <div class="col-6">
+                <xmp>
+                    @media all and (min-width: 576px) {
+
+                    .mediaquery-fontsize {
+                    font-size: 20px;
+                    }
+
+                    .mediaquery-display {
+                    display: block;
+                    }
+
+                    .mediaquery-menu {
+                    min-width: 20%;
+                    }
+
+                    }
+                </xmp>
+            </div>
+        </div>
+        <div class="transparent-container my-2">
+            <div id="" class="square-box grey-background mediaquery-fontsize"></div>
+        </div>
+        <div class="transparent-container my-2 flex-wrap">
+            <div id="" class="square-box grey-background mediaquery-menu">Item 1</div>
+            <div id="" class="square-box grey-background mediaquery-menu">Item 2</div>
+            <div id="" class="square-box grey-background mediaquery-menu">Item 3</div>
+            <div id="" class="square-box grey-background mediaquery-menu">Item 4</div>
+        </div>
+        <div class="transparent-container my-2">
+            <div id="" class="square-box grey-background mediaquery-display"></div>
+        </div>
+    </div>
+</div>
+<div id="slide11" class="slide" entry="grow">
+    <div class="container">
+        <h1>Recap</h1>
+        <ul>
+            <li><h3>CSS Selectors</h3></li>
+            <li><h3>Flex Box</h3></li>
+            <li><h3>Media Queries</h3></li>
+        </ul>
+    </div>
+</div>
+<div id="slide12" class="slide" entry="grow">
+    <div class="container">
+        <div class="row no-gutters h-100 justify-content-center align-items-center">
+            <div class="col">
+                <div class="slide-header text-center">Thank you!</div>
+            </div>
+        </div>
+    </div>
+</div>

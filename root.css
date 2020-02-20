@@ -1,0 +1,10 @@
+:root {
+    --font-size: 18px;
+    --talk-duration: 900s;
+    --timer-color: azure;
+    --timer-size: 5vw;
+    --theme-background: #fff;
+    --theme-fontcolor: #011053;
+    --theme-inverted-background: #000;
+    --theme-inverted-fontcolor: #fff;
+}

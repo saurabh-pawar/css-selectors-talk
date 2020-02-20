@@ -1,0 +1,277 @@
+
+.css-selector-code-container{
+    display: flex;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    flex-wrap: wrap;
+    margin: 0.5rem 0; 
+}
+
+.css-selector-syntax-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.css-selector-describe-text {
+    font-size: 1em;
+    font-style: italic;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.marvel-comics, .dc-comics {
+    font-size: 1.2em;
+}
+
+
+.markup{
+    font-size: 1.5em;
+    color: #aaaaaa;
+}
+
+ul{
+   list-style-type: none;
+}
+
+
+.selector-example{
+    display: block;
+    max-width: 33.33%;
+    min-width: 33.33%;
+    position:absolute;
+    margin-top:1em;
+    text-align: center;
+}
+
+.selector-demo{
+    position: absolute;
+    display: block;
+    left: 33.33%;
+    max-width: 66.66%;
+    min-width: 66.66%;
+}
+
+.top-10 {top:10%;}
+.top-20 {top: 20%;}
+.top-30 {top: 10%;}
+.top-40 {top: 40%;}
+.top-50 {top: 50%;}
+.top-60 {top: 60%;}
+.top-70 {top: 70%;}
+.top-80 {top: 80%;}
+.top-90 {top: 90%;}
+.top-25 {top: 25%;}
+.top-75 {top: 75%;}
+.top-100 {top: 100%;}
+
+.height-10 {
+    height: 10%;
+}
+
+.height-20 {
+    height: 20%;
+}
+
+.session {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    /*font-size: 1.2em;
+    line-height: 1.2em;*/
+    vertical-align:middle;
+}
+
+ul li, div[id$="session"] > div {
+    padding: 15px;
+}
+
+#b2b-schedule > ul > li > div {
+    height: 1.2em;
+    background-color: #ffe1da;
+}
+
+input {
+    background-color: aquamarine;
+}
+
+
+#common-selector-1:checked ~ .demo-container h1 {
+    color: #d32c09;
+}
+#common-selector-2:checked ~ .demo-container .session-name {
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+#common-selector-3:checked ~ .demo-container #morning-session {
+    background-color: #e2e2e2;
+}
+#common-selector-3:checked ~ .demo-container #afternoon-session {
+    background-color: #c7c7c7;
+}
+
+
+#attr-selector-1:checked ~ .demo-container [class="session-name"] {
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+#attr-selector-2:checked ~ .demo-container [id$="session"] {
+    background-color: #e2e2e2;
+    border: 1px solid black;
+}
+#attr-selector-3:checked ~ .demo-container [id*="break"] {
+    font-style: italic;
+    background-color: #c7c7c7;
+}
+#attr-selector-4:checked ~ .demo-container [id^="break"] {
+    font-style: italic;
+    background-color: #c7c7c7;
+}
+#attr-selector-5:checked ~ .demo-container [format~="talk"] {
+    font-style: italic;
+    background-color: #c7c7c7;
+}
+#attr-selector-6:checked ~ .demo-container [id|="morning"] {
+    border-right: 1px solid black;
+}
+
+
+#child-selector-1:checked ~ .demo-container ul [id*="break"] {
+    text-align: center;
+}
+#child-selector-2:checked ~ .demo-container li > .talk-topic {
+    font-weight: bold;
+}
+#child-selector-3:checked ~ .demo-container li + li {
+    border-top: 1px solid black;
+}
+#child-selector-4:checked ~ .demo-container h1 ~ div[id$="session"] {
+    border: 3px solid black;
+}
+
+#pseudo-selector-1:checked ~ .demo-container ul li:hover {
+    background-color: #c9e1f5;
+}
+#pseudo-selector-2:checked ~ .demo-container ul li input:checked ~ div[class~="talk-time"] {
+    color: red;
+    font-weight: bold;
+}
+
+#struct-pseudo-selector-1:checked ~ .demo-container h1:first-child {
+    border-bottom : 1px solid black;
+    text-align: center;
+}
+/*#struct-pseudo-selector-1:checked ~ .demo-container div[id$="session"] > div:first-child {
+    font-size: 1.3em;
+    font-weight: bold;
+}*/
+#struct-pseudo-selector-1:checked ~ .demo-container > div:last-child {
+    border-bottom: 1px solid black;
+}
+
+#struct-pseudo-selector-2:checked ~ .demo-container ul li:nth-child(2n+1){
+    background-color: #e0e8ee;
+}
+
+#struct-pseudo-selector-6:checked ~ .demo-container div[class~="talk-presenter"]:empty:before {
+    content: 'Multiple Speakers';
+}
+
+#pseudo-elements-selector-1:checked ~ .demo-container ul li:not([id^="talk"]) {
+    background-color: #e0e8ee;
+}
+#pseudo-elements-selector-2:checked ~ .demo-container div:first-letter {
+    text-transform: capitalize;
+}
+#pseudo-elements-selector-3:checked ~ .demo-container div.talk-presenter:first-line {
+    text-transform: capitalize;
+}
+
+.demo-container{
+    counter-reset: talk-counter 1;
+}
+
+.talk-topic{
+    counter-increment: talk-counter;
+}
+
+#pseudo-elements-selector-4:checked ~ .demo-container li input:before {
+    content: counter(talk-counter);
+}
+
+
+/*#selector-class:checked ~ .demo-container .some-container,
+#selector-id:checked ~ .demo-container #element-id,
+#selector-tag:checked ~ .demo-container h1,
+#selector-comma:checked ~ .demo-container h1,
+#selector-comma:checked ~ .demo-container #element-id,
+#selector-space:checked ~ .demo-container div p,
+#selector-plus:checked ~ .demo-container h1 + div,
+#selector-siblings:checked ~ .demo-container .some-container ~ #element-id,
+#selector-attr:checked ~ .demo-container [for="back2base"],
+#attr-selector1:checked ~ .demo-container div ul [avengers-charachter^="incredible"],
+#selector-checked:checked ~ .demo-container div label[for="checked-input-example"],
+#selector-firstchild:checked ~ .demo-container div p:first-child,
+#selector-nthchild:checked ~ .demo-container div p:nth-child(2) {
+    color: red;
+}
+
+
+#selector-class:checked + label,
+#selector-id:checked + label,
+#selector-tag:checked + label,
+#selector-comma:checked + label,
+#selector-comma:checked + label,
+#selector-space:checked + label,
+#selector-plus:checked + label,
+#selector-siblings:checked + label,
+#selector-attr:checked + label,
+#selector-attr2:checked + label,
+#selector-checked:checked + label,
+#selector-firstchild:checked + label,
+#selector-nthchild:checked + label {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}*/
+
+
+#attr-selector-1:checked ~ div label[for="attr-selector-1"],
+#attr-selector-2:checked ~ div label[for="attr-selector-2"],
+#attr-selector-3:checked ~ div label[for="attr-selector-3"],
+#attr-selector-4:checked ~ div label[for="attr-selector-4"],
+#attr-selector-5:checked ~ div label[for="attr-selector-5"],
+#attr-selector-6:checked ~ div label[for="attr-selector-6"],
+#common-selector-1:checked ~ div label[for="common-selector-1"],
+#common-selector-2:checked ~ div label[for="common-selector-2"],
+#common-selector-3:checked ~ div label[for="common-selector-3"],
+#child-selector-1:checked ~ div label[for="child-selector-1"],
+#child-selector-2:checked ~ div label[for="child-selector-2"],
+#child-selector-3:checked ~ div label[for="child-selector-3"],
+#child-selector-4:checked ~ div label[for="child-selector-4"],
+#pseudo-selector-1:checked ~ div label[for="pseudo-selector-1"],
+#pseudo-selector-2:checked ~ div label[for="pseudo-selector-2"],
+#pseudo-selector-3:checked ~ div label[for="pseudo-selector-3"],
+#pseudo-selector-4:checked ~ div label[for="pseudo-selector-4"],
+#pseudo-selector-5:checked ~ div label[for="pseudo-selector-5"],
+#pseudo-selector-6:checked ~ div label[for="pseudo-selector-6"],
+#struct-pseudo-selector-1:checked ~ div label[for="struct-pseudo-selector-1"],
+#struct-pseudo-selector-2:checked ~ div label[for="struct-pseudo-selector-2"],
+#struct-pseudo-selector-3:checked ~ div label[for="struct-pseudo-selector-3"],
+#struct-pseudo-selector-4:checked ~ div label[for="struct-pseudo-selector-4"],
+#struct-pseudo-selector-5:checked ~ div label[for="struct-pseudo-selector-5"],
+#struct-pseudo-selector-6:checked ~ div label[for="struct-pseudo-selector-6"],
+#pseudo-elements-selector-1:checked ~ div label[for="pseudo-elements-selector-1"],
+#pseudo-elements-selector-2:checked ~ div label[for="pseudo-elements-selector-2"],
+#pseudo-elements-selector-3:checked ~ div label[for="pseudo-elements-selector-3"],
+#pseudo-elements-selector-4:checked ~ div label[for="pseudo-elements-selector-4"],
+#pseudo-elements-selector-5:checked ~ div label[for="pseudo-elements-selector-5"],
+#pseudo-elements-selector-6:checked ~ div label[for="pseudo-elements-selector-6"] {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
