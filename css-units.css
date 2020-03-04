@@ -1,0 +1,105 @@
+.demo-container-flexbox{
+    display: flex;
+    height: 10%;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-27 {
+    font-size: 27px;
+}
+
+.container-css-units {
+    font-size: 1em;
+    width: 100%;
+}
+
+.demo-html-root{
+
+}
+
+.div-css-units {
+    display: flex;
+    width: 30%;
+    height: 20%;
+    background-color: #25bfd4;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.div-css-unit1::before {
+    content: "Header font size is 36px";
+    font-size: 36px;
+}
+
+.div-css-unit2::before {
+    content: "This is the body of the web page and its font size is 18px";
+    font-size: 18px;
+}
+
+
+#relative-css-units-1:checked ~ .demo-container .div-css-units {
+    width: 100%;
+}
+
+#relative-css-units-2:checked ~ .demo-container .div-css-unit1:before {
+    content: "Header font size is now 1.5 em";
+    font-size: 1.5em;
+}
+#relative-css-units-2:checked ~ .demo-container .div-css-unit2:before {
+    content: "This is the body of the web page and its font size is now 0.7 em";
+    font-size: 0.7em;
+}
+
+#relative-css-units-8:checked ~ .container-css-units{
+    font-size: 18px;
+}
+
+#relative-css-units-9:checked ~ .container-css-units {
+    font-size: 27px;
+}
+
+
+#relative-css-units-3:checked ~ .demo-container .div-css-units:before {
+    content: "Font size changed to 1rem";
+    font-size: 1rem;
+}
+
+
+#relative-css-units-4:checked ~ .demo-container .div-css-units {
+    width: 30vw;
+}
+
+#relative-css-units-5:checked ~ .demo-container .div-css-units {
+    height: 30vh;
+}
+
+#relative-css-units-6:checked ~ .demo-container .div-css-units {
+    width: 30vmin;
+}
+
+#relative-css-units-7:checked ~ .demo-container .div-css-units {
+    width: 30vmax;
+}
+
+#relative-css-units-1:checked ~ div label[for="relative-css-units-1"],
+#relative-css-units-2:checked ~ div label[for="relative-css-units-2"],
+#relative-css-units-3:checked ~ div label[for="relative-css-units-3"],
+#relative-css-units-4:checked ~ div label[for="relative-css-units-4"],
+#relative-css-units-5:checked ~ div label[for="relative-css-units-5"],
+#relative-css-units-6:checked ~ div label[for="relative-css-units-6"],
+#relative-css-units-7:checked ~ div label[for="relative-css-units-7"] {
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#relative-css-units-8:checked ~ div label[for="relative-css-units-8"],
+#relative-css-units-9:checked ~ div label[for="relative-css-units-9"] {
+    color: red;
+    font-weight: bold;
+}
