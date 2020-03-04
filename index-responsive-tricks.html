@@ -21,11 +21,11 @@
     <label for="start-button" class="start-button"></label>
 
 
-    <input type="radio" id="nav-button-1" name="navigation" class="no-area" />
+    <input type="radio" id="nav-button-1" name="navigation" class="no-area" checked/>
     <input type="radio" id="nav-button-2" name="navigation" class="no-area" />
-    <input type="radio" id="nav-button-3" name="navigation" class="no-area" checked/>
+    <input type="radio" id="nav-button-3" name="navigation" class="no-area" />
     <input type="radio" id="nav-button-4" name="navigation" class="no-area" />
-    <input type="radio" id="nav-button-5" name="navigation" class="no-area"  />
+    <input type="radio" id="nav-button-5" name="navigation" class="no-area" />
     <input type="radio" id="nav-button-6" name="navigation" class="no-area" />
     <input type="radio" id="nav-button-7" name="navigation" class="no-area" />
     <input type="radio" id="nav-button-8" name="navigation" class="no-area" />
@@ -97,24 +97,24 @@
             </div>
             <div class="row no-gutters pt-1 h-75 justify-content-center">
 
-                <input type="checkbox" id="relative-css-units-1" name="relative-selectors-1" class="no-area" />
+                <input type="radio" id="relative-css-units-1" name="relative-selectors-1" class="no-area" />
                 <input type="radio" id="relative-css-units-2" name="relative-selectors-2" class="no-area" />
                 <input type="radio" id="relative-css-units-3" name="relative-selectors-2" class="no-area" />
-                <input type="radio" id="relative-css-units-4" name="relative-selectors-2" class="no-area" />
-                <input type="radio" id="relative-css-units-5" name="relative-selectors-2" class="no-area" />
-                <input type="radio" id="relative-css-units-6" name="relative-selectors-2" class="no-area" />
-                <input type="radio" id="relative-css-units-7" name="relative-selectors-2" class="no-area" />
+                <input type="radio" id="relative-css-units-4" name="relative-selectors-1" class="no-area" />
+                <input type="radio" id="relative-css-units-5" name="relative-selectors-1" class="no-area" />
+                <input type="radio" id="relative-css-units-6" name="relative-selectors-1" class="no-area" />
+                <input type="radio" id="relative-css-units-7" name="relative-selectors-1" class="no-area" />
 
                 <div class="css-selector-code-container">
-                    <label class="css-selector-syntax-text" for="relative-css-units-1">width: 100%</label>
+                    <label class="css-selector-syntax-text" for="relative-css-units-1">width: 50%</label>
                     <span class="css-selector-describe-text">percentage</span>
                 </div>
                 <div class="css-selector-code-container">
-                    <label class="css-selector-syntax-text" for="relative-css-units-2">font-size: 1.5 em | font-size: 0.7 em</label>
+                    <label class="css-selector-syntax-text" for="relative-css-units-2">font-size: 2 em | font-size: 1 em</label>
                     <span class="css-selector-describe-text">relative to parent element</span>
                 </div>
                 <div class="css-selector-code-container">
-                    <label class="css-selector-syntax-text" for="relative-css-units-3">1 rem</label>
+                    <label class="css-selector-syntax-text" for="relative-css-units-3">font-size: 2 rem | font-size: 1 rem</label>
                     <span class="css-selector-describe-text">relative to root element</span>
                 </div>
                 <div class="css-selector-code-container">
@@ -135,21 +135,14 @@
                 </div>
 
 
-                <div class="demo-container d-flex">
-                    <!--<input type="radio" id="relative-css-units-8" name="relative-selectors-3" class="no-area" />
-                    <input type="radio" id="relative-css-units-9" name="relative-selectors-3" class="no-area" />
-
-                    <div><label for="relative-css-units-8" class="font-size-18">html { font-size: 18px; }</label></div>
-                    <div>&emsp;&emsp; | &emsp;&emsp;</div>
-                    <div><label for="relative-css-units-9" class="font-size-27">html { font-size: 27px; }</label></div>
-
-                    <div class="demo-container d-flex demo-html-root">
-                        <div class="container-css-units">This is div has font size : 1em</div>
-                        <div class="col-12 container-css-units">
-                            <div class="div-css-units div-css-unit1"></div>
-                            <div class="div-css-units div-css-unit2"></div>
+                <div class="demo-container d-flex" style="height:60%">
+                    <div class="demo-html">
+                        <div>This is the root html font size 18px</div>
+                        <div class="demo-content">
+                            <div class="demo-header"></div>
+                            <div class="demo-paragraph"></div>
                         </div>
-                    </div>-->
+                    </div>
                 </div>
 
 
@@ -310,60 +303,53 @@
     <slide slide-sequence-number="9" entry-animation="grow">
         <div class="container-fluid px-0">
             <h3>Syntax:</h3>
-            <div class="font-italic">@media all and (min-width: 576px) { ... }</div>
-            <br />
+            <span class="hover-highlight">@media</span>
+            <span class="hover-highlight">not|only</span>
+            <span class="hover-highlight">mediatype</span>
+            <span class="hover-highlight">and</span>
+            <span class="hover-highlight">(mediafeature and|or|not mediafeature)</span>
+            <span class="hover-highlight">{ CSS-Code; }</span>
 
-            <h3>Commonly used properties:</h3>
-            <div class="font-italic">min-width, max-width, min-height, max-height, orientation, resolution</div>
-            <br />
+            <br /><br />
 
-            <h3>Examples:</h3>
-            <div class="row no-gutters mediaquery-code">
-                <div class="col-6">
-                    <xmp>
-                        .mediaquery-fontsize {
-                        font-size: 10px;
-                        }
+            <input type="checkbox" id="mediaquery-example-1" name="mediaquery-examples" class="no-area" />
+            <label for="mediaquery-example-1"><h3>Example:</h3></label>
+            
+            <br /><br />
+            
+            <div id="example">
+                <input type="checkbox" id="burger-menu-icon" name="burger-menu-icon" class="no-area" checked/>
+                <label for="burger-menu-icon" class="burger-menu-icon"></label>
 
-                        .mediaquery-display {
-                        display: none;
-                        }
-
-                        .mediaquery-menu {
-                        min-width: 97%;
-                        }
-                    </xmp>
+                <div class="demo-container-flexbox my-2 justify-content-center menu">
+                    <div class="demo-flex-box grey-background rectangle-box menu-item">Item 1</div>
+                    <div class="demo-flex-box grey-background rectangle-box menu-item">Item 2</div>
+                    <div class="demo-flex-box grey-background rectangle-box menu-item">Item 3</div>
+                    <div class="demo-flex-box grey-background rectangle-box menu-item">Item 4</div>
                 </div>
-                <div class="col-6">
-                    <xmp>
-                        @media all and (min-width: 576px) {
 
-                        .mediaquery-fontsize {
-                        font-size: 20px;
-                        }
+                <div class="row no-gutters mediaquery-code">
+                    <div class="col-6">
+                        <xmp>
+@media all and (max-width: 576px) {    
+    .menu-item {
+        flex: 0 0 100%;
+    }
 
-                        .mediaquery-display {
-                        display: block;
-                        }
+    .burger-menu-icon{
+        display: block;
+    }
 
-                        .mediaquery-menu {
-                        min-width: 20%;
-                        }
+    #burger-menu-icon:not(:checked) ~ .menu-item {
+        display: none;
+    }
 
-                        }
-                    </xmp>
+}
+                        </xmp>
+                    </div>
                 </div>
             </div>
-            <div class="demo-container d-flex my-2">
-                <div class="demo-flex-box grey-background mediaquery-fontsize"></div>
 
-                <div class="demo-flex-box grey-background mediaquery-menu">Item 1</div>
-                <div class="demo-flex-box grey-background mediaquery-menu">Item 2</div>
-                <div class="demo-flex-box grey-background mediaquery-menu">Item 3</div>
-                <div class="demo-flex-box grey-background mediaquery-menu">Item 4</div>
-
-                <div class="demo-flex-box grey-background mediaquery-display"></div>
-            </div>
         </div>
     </slide>
     <slide slide-sequence-number="10" entry-animation="slide_left">

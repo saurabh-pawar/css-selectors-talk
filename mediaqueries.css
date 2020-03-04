@@ -7,49 +7,57 @@
     --breakpoint-xl: 1200px;
 }
 
-
-.mediaquery-fontsize {
-    font-size: 10px;
+xmp {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 
-.mediaquery-fontsize::after {
-    content: 'font-size 10px'
-}
-
-.mediaquery-display {
+#example{
     display: none;
 }
 
-.mediaquery-menu {
-    min-width: 97%;
+.burger-menu-icon {
+    width: 3em;
+    border: 2px solid var(--theme-fontcolor);
+    border-radius: 0.5em;
+    text-align: center;
+    display: none;
 }
 
-.mediaquery-code{
-    display : none;
+.burger-menu-icon::before {
+    font-family: "FontAwesome";
+    content: '\f0c9';
+    font-size: 1.5em;
 }
 
-@media all and (min-width: 576px) {
-    .mediaquery-fontsize {
-        font-size: 20px;
+.menu-item {
+    flex: 1 0 20%;
+}
+
+
+@media all and (max-width: 576px) {
+    .menu {
+        flex-wrap: wrap;
     }
 
-    .mediaquery-code {
-        display: flex;
+    .menu-item {
+        flex: 1 0 100%;
     }
 
-    .mediaquery-fontsize::after {
-        content: 'font-size 20px'
-    }
-
-    .mediaquery-display {
+    .burger-menu-icon{
         display: block;
     }
 
-    .mediaquery-display:after {
-        content: 'You can see me only when the width is more than 576px';
+    #burger-menu-icon:not(:checked) ~ .menu {
+        display: none;
     }
 
-    .mediaquery-menu {
-        min-width: 20%;
+    #burger-menu-icon:checked + label[for="burger-menu-icon"] {
+        background-color: var(--theme-fontcolor);
+        color: #fff;
     }
+}
+
+#mediaquery-example-1:checked ~ #example {
+    display: block;
 }

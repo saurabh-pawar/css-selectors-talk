@@ -1,3 +1,7 @@
+.demo-container-flexbox {
+    display: flex;
+    min-height: 10%;
+}
 
 /***************************Flex Grow***************************/
 .my-flex-grow-1 {

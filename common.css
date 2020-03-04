@@ -45,6 +45,11 @@ body::-webkit-scrollbar{
     height: 10vw;
 }
 
+.rectangle-box {
+    width: 20vw;
+    height: 10vw;
+}
+
 .greenyellow-background {
     background-color: greenyellow;
 }
@@ -120,6 +125,16 @@ w-0, .wh-0 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hover-highlight {
+    font-size: 1em;
+}
+
+.hover-highlight:hover {
+    font-size: 1.5em;
+    color: red;
+    font-weight: bold;
 }
 
 
